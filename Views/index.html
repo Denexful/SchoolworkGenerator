@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'nonce-123'; style-src 'self' ">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src TestAPI.js">
+    
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/all.min.css">
+    <script nonce="123">window.$ = window.jQuery = require('../JavaScript/jquery-3.5.1.min.js');</script>
+    <script nonce="123" src="../JavaScript/popper.min.js"></script>
+    <script nonce="123" src="../JavaScript/bootstrap.min.js"></script>
+    <script nonce="123" src="../JavaScript/TestAPI.js"></script>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>Schoolwork generator</title>
+  </head>
+  <body>
+    <div id="TestGeneratorBody" class="TestGeneratorBody">
+    </div>  
+    
+    <div class="container AddButton">  
+      <button id="AddButton" type="button" class="btn btn-outline-primary btn-circle btn-xl">
+        <i class="fas fa-plus"></i>
+      </button> 
+      <div class="row ButtonMenu">
+        <button id="SubmitButton" type="button" class="btn btn-outline-success SubmitButton">Submit</button>
+        <button id="RefreshButton" type="button" class="btn btn-outline-info RefreshButton"><i class="fas fa-redo"></i></button>
+      </div>
+      <input id="TestNameField" type="text" class="form-control TestNameField" placeholder="TestName">
+
+    </button>
+    </div>
+
+  </body>
+</html>

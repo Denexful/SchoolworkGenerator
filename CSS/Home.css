@@ -1,0 +1,121 @@
+
+.btn-circle.btn-xl { 
+    width: 70px; 
+    height: 70px; 
+    padding: 10px 16px; 
+    border-radius: 35px; 
+    font-size: 20px; 
+    text-align: center; 
+} 
+.AddButton{
+    text-align: center;
+    position: relative;
+}
+.TestGeneratorBody{
+    margin-top: 1%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+input{
+    height: 100%;
+}
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+  }
+  .btn-flip:hover:after {
+    opacity: 1;
+    -webkit-transform: translateY(0) rotateX(0);
+            transform: translateY(0) rotateX(0);
+  }
+  .btn-flip:hover:before {
+    opacity: 0;
+    -webkit-transform: translateY(50%) rotateX(90deg);
+            transform: translateY(50%) rotateX(90deg);
+  }
+  .btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: white;
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    position: absolute;
+    background: orangered;
+    content: attr(data-back);
+    -webkit-transform: translateY(-50%) rotateX(90deg);
+            transform: translateY(-50%) rotateX(90deg);
+  }
+  .btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: black;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    position: relative;
+    background: lightgray;
+    content: attr(data-front);
+    -webkit-transform: translateY(0) rotateX(0);
+            transform: translateY(0) rotateX(0);
+  }
+  .QuestionLabel{
+    height: auto;
+  }
+
+  .num-input{
+    max-width: 65px;
+  }
+.ButtonMenu{
+  width: fit-content;
+  position: absolute;
+  bottom: 0px;
+  margin: unset;
+  right: 0px;
+}
+.SubmitButton{
+  margin-right: 0.5rem;
+  margin-bottom: unset;
+}
+.RefreshButton:hover i{
+  animation: rotate 1s;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.TestNameField{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 200px;
+}
+@keyframes rotate{ 
+  0%{ 
+      transform: rotate(0deg); 
+  } 
+  100%{ 
+      transform: rotate(360deg); 
+  } 
+} 

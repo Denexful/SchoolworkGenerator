@@ -1,0 +1,30 @@
+{
+  "name": "schoolworkgenerator",
+  "version": "1.0.0",
+  "description": "This test is to create a ODF/Word document witch you can write questions for a school test",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pi@raspberrypi:/home/pi/git/SchoolAssignmentTest"
+  },
+  "author": "Denis Stawicki",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.2",
+    "electron-packager": "^15.1.0"
+  },
+  "dependencies": {
+    "simple-odf": "^2.0.0"
+  },
+  "build": {
+    "appId": "DenisStawicki",
+    "mac": {
+      "category": "HomeWork"
+    }
+  }
+}
